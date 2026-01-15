@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Web Port Games</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f0f0f;
+      color: #ffffff;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      background: #111;
+      border-bottom: 1px solid #222;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .games {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 16px;
+      padding: 24px;
+    }
+
+    .game {
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 8px;
+      padding: 16px;
+      text-align: center;
+      transition: transform 0.15s ease, background 0.15s ease;
+    }
+
+    .game:hover {
+      transform: translateY(-4px);
+      background: #222;
+    }
+
+    .game a {
+      color: #4da6ff;
+      text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 12px;
+      color: #777;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Web Port Games</h1>
+    <p>Select a game to play</p>
+  </header>
+
+  <main class="games">
+    <!-- Add one entry per game folder -->
+    <div class="game"><a href="raft/index.html">Raft</a></div>
+    <div class="game"><a href="cuphead/index.html">Cuphead</a></div>
+    <div class="game"><a href="baldi-plus/index.html">Baldi Plus</a></div>
+    <div class="game"><a href="minecraft/index.html">Minecraft</a></div>
+    <!-- add/remove games as needed -->
+  </main>
+
+  <footer>
+    Hosted with GitHub Pages
+  </footer>
+
+</body>
+</html>
